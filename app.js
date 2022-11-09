@@ -56,22 +56,22 @@ app.component("card-componnent", {
     <div class="row text-center">
       <div class="col-sm-3 col-md-5">
         <label>Satış Fiyatı</label>
-        <input v-model='productAnalize.salesPrice' :value='productAnalize.salesPrice' type="number" class="mt-3 mb-3 form-control text-center" placeholder="Satış Fiyatı" />
+        <input v-model='productAnalize.salesPrice' :value='productAnalize.salesPrice' type="tel" class="mt-3 mb-3 form-control text-center" placeholder="Satış Fiyatı" />
       </div>
 
       <div class="col-sm-3 col-md-5">
         <label>Ürün Fiyatı</label>
-        <input v-model='productAnalize.productPrice' :value='productAnalize.productPrice' type="number" class="mt-3 mb-3 form-control text-center" placeholder="Ürün Fiyatı" />
+        <input v-model='productAnalize.productPrice' :value='productAnalize.productPrice' type="tel" class="mt-3 mb-3 form-control text-center" placeholder="Ürün Fiyatı" />
       </div>
 
       <div class="col-sm-3 col-md-5">
       <label>Adet</label>
-      <input v-model='productAnalize.piece' :value='productAnalize.piece' type="number" class="mt-3 mb-3 form-control text-center" placeholder="Adet" />
+      <input v-model='productAnalize.piece' :value='productAnalize.piece' type="tel" class="mt-3 mb-3 form-control text-center" placeholder="Adet" />
     </div>
 
       <div class="col-sm-3 col-md-5">
          <label>% Komisyon</label>
-         <input v-model='productAnalize.comisyon' :value='productAnalize.comisyon' type="number" class="mt-3 mb-3 form-control text-center" placeholder="% Komisyon" />
+         <input v-model='productAnalize.comisyon' :value='productAnalize.comisyon' type="tel" class="mt-3 mb-3 form-control text-center" placeholder="% Komisyon" />
       </div>
 
       <div class="col-sm-3 col-md-5">

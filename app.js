@@ -31,19 +31,19 @@ app.component("card-componnent", {
 
                         --------------------------------------------
 
-                        Satış Fiyatı : ${this.productAnalize.salesPrice}
+                        Satış Fiyatı : ${this.productAnalize.salesPrice} ₺
                         --------------------------------------------
-                        Ürün Fiyatı : ${this.productAnalize.productPrice}
+                        Ürün Fiyatı : ${this.productAnalize.productPrice} ₺
                         --------------------------------------------
-                        Adet  : ${this.productAnalize.piece}
+                        Adet  : ${this.productAnalize.piece} Tane
                         --------------------------------------------
-                        Komisyon : ${this.productAnalize.comisyon}
+                        Komisyon : % ${this.productAnalize.comisyon}
                         --------------------------------------------
-                        Kargo Fiyatı : ${this.productAnalize.cargoPrice}
+                        Kargo Fiyatı : ${this.productAnalize.cargoPrice} ₺
                         --------------------------------------------
-                        Komisyon ve Kargo Fiyat Toplamı : ${this.productAnalize.comisyonAndCardo}
+                        Komisyon ve Kargo Fiyat Toplamı : ${this.productAnalize.comisyonAndCardo.toFixed(2)} ₺ 
                         --------------------------------------------
-                        Total Kar : ${this.productAnalize.total}
+                        Total Kar : ${this.productAnalize.total.toFixed(2)} ₺
                     `,
           }).done((e) => {});
         },

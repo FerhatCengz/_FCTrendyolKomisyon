@@ -76,12 +76,12 @@ app.component("card-componnent", {
 
       <div class="col-sm-3 col-md-5">
          <label>Kargo Ücreti</label>
-         <input v-model='productAnalize.cargoPrice' :value='productAnalize.cargoPrice' type="tel" class="mt-3 mb-3 form-control text-center" placeholder="Kargo Ücreti" />
+         <input v-model='productAnalize.cargoPrice' :value='productAnalize.cargoPrice' type="number" class="mt-3 mb-3 form-control text-center" placeholder="Kargo Ücreti" />
       </div>
 
       <div class="col-sm-3 col-md-5">
          <label>Kargo Ve Komisyon Toplamı</label>
-         <input :value='productAnalize.comisyonAndCardo.toFixed(2)' disabled type="text" class="mt-3 mb-3 form-control text-center"/>
+         <input :value='productAnalize.comisyonAndCardo.toFixed(2)' disabled type="number" class="mt-3 mb-3 form-control text-center"/>
       </div>
 
 
@@ -101,8 +101,6 @@ app.component("card-componnent", {
 
 </div>
 `,
-
-  props: ["textdegeri"],
 
   watch: {
     productAnalize: {

@@ -81,7 +81,7 @@ app.component("card-componnent", {
 
       <div class="col-sm-3 col-md-5">
          <label>Kargo Ve Komisyon Toplamı</label>
-         <input :value='productAnalize.comisyonAndCardo.toFixed(2)' disabled type="number" class="mt-3 mb-3 form-control text-center"/>
+         <input :value='productAnalize.comisyonAndCardo.toFixed(2)' disabled type="text" class="mt-3 mb-3 form-control text-center"/>
       </div>
 
 

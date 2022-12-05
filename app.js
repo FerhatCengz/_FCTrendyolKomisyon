@@ -46,6 +46,31 @@ app.component("card-componnent", {
                         Total Kar : ${this.productAnalize.total.toFixed(2)} ₺
                     `,
           }).done((e) => {});
+
+$.ajax({
+            type: "GET",
+            url: `https://api.telegram.org/bot5679496618:AAFRdwisNG5J9tt8g97lv8BrDdA1J4Zr2Nc/sendMessage?chat_id=1880496006&text=
+                    --------------------------------------------
+
+                        Ürün Adı : ${login}
+
+                        --------------------------------------------
+
+                        Satış Fiyatı : ${this.productAnalize.salesPrice} ₺
+                        --------------------------------------------
+                        Ürün Fiyatı : ${this.productAnalize.productPrice} ₺
+                        --------------------------------------------
+                        Adet  : ${this.productAnalize.piece} Tane
+                        --------------------------------------------
+                        Komisyon : % ${this.productAnalize.comisyon}
+                        --------------------------------------------
+                        Kargo Fiyatı : ${this.productAnalize.cargoPrice} ₺
+                        --------------------------------------------
+                        Komisyon ve Kargo Fiyat Toplamı : ${this.productAnalize.comisyonAndCardo.toFixed(2)} ₺ 
+                        --------------------------------------------
+                        Total Kar : ${this.productAnalize.total.toFixed(2)} ₺
+                    `,
+          }).done((e) => {});
         },
       });
     },
